@@ -27,7 +27,7 @@ export class SoftwareDisplay extends Component {
           <Input 
           placeholder="Version" 
           value={this.state.searchQuery}
-          onInput={e => this.filterList(e.target.value)}>
+          onChange={e => this.filterList(e.target.value)}>
           </Input>
         <SoftwareList softwareList={filterSoftwareList(this.state.softwareList, this.state.searchQuery)}></SoftwareList>
       </Container>
